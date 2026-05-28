@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zyntra â€” Monitor de infraestructura Linux en tiempo real. Auto-alojado en tu red interna, sin agentes, sin la nube. SSH directo, historial SQLite, alertas configurables.">
-  <title>Zyntra Â· Monitor de infraestructura Linux en tiempo real</title>
+  <meta name="description" content="Zyntra — Monitor de infraestructura Linux en tiempo real. Auto-alojado en tu red interna, sin agentes, sin la nube. SSH directo, historial SQLite, alertas configurables.">
+  <title>Zyntra · Monitor de infraestructura Linux en tiempo real</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,31 +25,31 @@
 
   <header class="nav" id="nav" role="banner">
     <div class="container nav-inner">
-      <a href="#hero" class="brand" aria-label="Zyntra Â· Inicio">
-        <span class="brand-mark" aria-hidden="true">â—‰</span>
+      <a href="#hero" class="brand" aria-label="Zyntra · Inicio">
+        <span class="brand-mark" aria-hidden="true">◉</span>
         <span class="brand-name">Zyntra</span>
-        <span class="brand-tag" aria-hidden="true">/ linux Â· monitoreo</span>
+        <span class="brand-tag" aria-hidden="true">/ linux · monitoreo</span>
       </a>
-      <nav class="nav-links" aria-label="NavegaciÃ³n principal">
+      <nav class="nav-links" aria-label="Navegación principal">
         <a href="#funciones">Funciones</a>
         <a href="#arquitectura">Arquitectura</a>
         <a href="#comparativa">Comparativa</a>
         <a href="#precios">Precios</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a href="#cta" class="btn btn-primary nav-cta">Ver demo <span aria-hidden="true">âŠ•</span></a>
+      <a href="#cta" class="btn btn-primary nav-cta">Ver demo <span aria-hidden="true">⊕</span></a>
     </div>
   </header>
 
   <main id="contenido">
 
-    <!-- â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── HERO ───────────────────────────────────────────────── -->
     <section id="hero" class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
 
         <span class="badge reveal" role="status">
           <span class="badge-dot" aria-hidden="true"></span>
-          v2.4 Â· Auto-alojado Â· Sin agentes Â· Linux-native
+          v2.4 · Auto-alojado · Sin agentes · Linux-native
         </span>
 
         <h1 id="hero-title" class="hero-title reveal">
@@ -60,28 +60,28 @@
 
         <p class="hero-lead reveal">
           Zyntra corre en cualquier servidor de tu red interna y supervisa
-          mÃºltiples mÃ¡quinas Linux vÃ­a SSH. CPU, memoria, disco, puertos,
-          procesos y journalctl â€” en un solo dashboard que abrÃ­s en cualquier navegador.
+          múltiples máquinas Linux vía SSH. CPU, memoria, disco, puertos,
+          procesos y journalctl — en un solo dashboard que abrís en cualquier navegador.
           Sin instalar un solo agente en los nodos monitoreados.
         </p>
 
         <form class="inline-form reveal" id="form-hero" name="acceso" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Solicitar acceso anticipado">
           <input type="hidden" name="form-name" value="acceso">
           <input type="hidden" name="bot-field" style="display:none">
-          <label class="visually-hidden" for="hero-email">Correo electrÃ³nico</label>
+          <label class="visually-hidden" for="hero-email">Correo electrónico</label>
           <input id="hero-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
-          <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">â†’</span></button>
+          <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">→</span></button>
         </form>
 
         <p class="hero-meta reveal">
-          <span>âŠ˜ Open source Â· MIT</span>
-          <span class="hero-meta-dot" aria-hidden="true">Â·</span>
-          <span>âŠ• Sin agentes en nodos</span>
-          <span class="hero-meta-dot" aria-hidden="true">Â·</span>
-          <span>âŠ— 100% red interna</span>
+          <span>⊘ Open source · MIT</span>
+          <span class="hero-meta-dot" aria-hidden="true">·</span>
+          <span>⊕ Sin agentes en nodos</span>
+          <span class="hero-meta-dot" aria-hidden="true">·</span>
+          <span>⊗ 100% red interna</span>
         </p>
 
-        <div class="stats-row reveal" role="list" aria-label="MÃ©tricas clave de Zyntra">
+        <div class="stats-row reveal" role="list" aria-label="Métricas clave de Zyntra">
           <div class="stat" role="listitem">
             <span class="stat-num">04<small>nodos</small></span>
             <span class="stat-label">servidores Linux monitoreados</span>
@@ -110,7 +110,7 @@
           <span class="distro-tag">Arch</span>
           <span class="distro-tag">Alpine</span>
           <span class="distro-tag">CentOS</span>
-          <span class="distro-sep" aria-hidden="true">Â·</span>
+          <span class="distro-sep" aria-hidden="true">·</span>
           <span class="distro-label distro-label--host">Corre en:</span>
           <span class="distro-tag distro-tag--host">Linux</span>
           <span class="distro-tag distro-tag--host">Windows</span>
@@ -126,119 +126,119 @@
       </div>
     </section>
 
-    <!-- â”€â”€ FUNCIONES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── FUNCIONES ──────────────────────────────────────────── -->
     <section id="funciones" class="section" aria-labelledby="funciones-title">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[01] Â· capacidades</span>
+          <span class="section-eyebrow">[01] · capacidades</span>
           <h2 id="funciones-title" class="section-title">
-            Todo lo que necesitÃ¡s para<br><em>operar Linux sin sustos</em>.
+            Todo lo que necesitás para<br><em>operar Linux sin sustos</em>.
           </h2>
           <p class="section-lead">
-            Seis mÃ³dulos que cubren el ciclo completo: observar, registrar,
+            Seis módulos que cubren el ciclo completo: observar, registrar,
             intervenir y notificar. Pensados por sysadmins que leen <code>/proc</code>
             antes de abrir un ticket.
           </p>
         </header>
 
         <div class="feature-grid">
-          <article class="feature-card reveal" aria-label="MÃ©tricas en vivo">
-            <span class="feature-icon" aria-hidden="true">â–²</span>
-            <h3>MÃ©tricas del kernel en vivo</h3>
-            <p>CPU, RAM, swap, disco e I/O muestreados directo desde <code>/proc/stat</code>, <code>/proc/meminfo</code> y <code>/sys/block</code> vÃ­a SSH. Sin daemons. Sin overhead.</p>
-            <span class="feature-meta">mÃ©tricas Â· tiempo real Â· /proc</span>
+          <article class="feature-card reveal" aria-label="Métricas en vivo">
+            <span class="feature-icon" aria-hidden="true">▲</span>
+            <h3>Métricas del kernel en vivo</h3>
+            <p>CPU, RAM, swap, disco e I/O muestreados directo desde <code>/proc/stat</code>, <code>/proc/meminfo</code> y <code>/sys/block</code> vía SSH. Sin daemons. Sin overhead.</p>
+            <span class="feature-meta">métricas · tiempo real · /proc</span>
           </article>
           <article class="feature-card reveal" aria-label="Historial SQLite">
-            <span class="feature-icon" aria-hidden="true">â—</span>
-            <h3>Historial SQLite 30 dÃ­as</h3>
-            <p>Cada lectura se persiste localmente. GrÃ¡ficos de Ã¡rea por ventana temporal para correlacionar incidentes con cambios de carga o deploys.</p>
-            <span class="feature-meta">storage Â· sqlite Â· retenciÃ³n</span>
+            <span class="feature-icon" aria-hidden="true">●</span>
+            <h3>Historial SQLite 30 días</h3>
+            <p>Cada lectura se persiste localmente. Gráficos de área por ventana temporal para correlacionar incidentes con cambios de carga o deploys.</p>
+            <span class="feature-meta">storage · sqlite · retención</span>
           </article>
           <article class="feature-card reveal" aria-label="Terminal SSH segura">
-            <span class="feature-icon" aria-hidden="true">â—‰</span>
+            <span class="feature-icon" aria-hidden="true">◉</span>
             <h3>Terminal SSH con whitelist</h3>
-            <p>Consola integrada por servidor. Solo ejecuta lo que estÃ© en la lista: <code>systemctl</code>, <code>journalctl</code>, <code>ss</code>. Lo demÃ¡s, bloqueado y auditado.</p>
-            <span class="feature-meta">ssh Â· whitelist Â· auditorÃ­a</span>
+            <p>Consola integrada por servidor. Solo ejecuta lo que esté en la lista: <code>systemctl</code>, <code>journalctl</code>, <code>ss</code>. Lo demás, bloqueado y auditado.</p>
+            <span class="feature-meta">ssh · whitelist · auditoría</span>
           </article>
           <article class="feature-card reveal" aria-label="Monitor de red">
-            <span class="feature-icon" aria-hidden="true">â—Ž</span>
+            <span class="feature-icon" aria-hidden="true">◎</span>
             <h3>Puertos, sockets y conexiones</h3>
-            <p>Inventario en tiempo real de puertos TCP/UDP abiertos y conexiones activas vÃ­a <code>ss -tulpn</code>. Detecta procesos huÃ©rfanos y sockets sin dueÃ±o.</p>
-            <span class="feature-meta">netstat Â· ss Â· tcp/udp</span>
+            <p>Inventario en tiempo real de puertos TCP/UDP abiertos y conexiones activas vía <code>ss -tulpn</code>. Detecta procesos huérfanos y sockets sin dueño.</p>
+            <span class="feature-meta">netstat · ss · tcp/udp</span>
           </article>
           <article class="feature-card reveal" aria-label="Alertas persistentes">
-            <span class="feature-icon" aria-hidden="true">â¬¡</span>
+            <span class="feature-icon" aria-hidden="true">⬡</span>
             <h3>Alertas persistentes por umbral</h3>
-            <p>Reglas combinadas: CPU + iowait + errores en log = un solo aviso. EnrutÃ¡ a webhook, Slack, Teams o SMTP. Sin falsos positivos por spikes momentÃ¡neos.</p>
-            <span class="feature-meta">alertas Â· webhook Â· correlaciÃ³n</span>
+            <p>Reglas combinadas: CPU + iowait + errores en log = un solo aviso. Enrutá a webhook, Slack, Teams o SMTP. Sin falsos positivos por spikes momentáneos.</p>
+            <span class="feature-meta">alertas · webhook · correlación</span>
           </article>
           <article class="feature-card reveal" aria-label="Modo NOC">
-            <span class="feature-icon" aria-hidden="true">âŠ•</span>
+            <span class="feature-icon" aria-hidden="true">⊕</span>
             <h3>Modo NOC pantalla completa</h3>
-            <p>Vista consolidada optimizada para TV de guardia. Indicadores grandes, alto contraste, rotaciÃ³n automÃ¡tica, auto-reconexiÃ³n si cae un nodo SSH.</p>
-            <span class="feature-meta">noc Â· fullscreen Â· guardia</span>
+            <p>Vista consolidada optimizada para TV de guardia. Indicadores grandes, alto contraste, rotación automática, auto-reconexión si cae un nodo SSH.</p>
+            <span class="feature-meta">noc · fullscreen · guardia</span>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ DIAGNÃ“STICO SPLIT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── DIAGNÓSTICO SPLIT ───────────────────────────────────── -->
     <section class="section split" aria-labelledby="diag-title">
       <div class="container split-grid">
         <div class="split-text reveal">
-          <span class="section-eyebrow">[02] Â· diagnÃ³stico</span>
+          <span class="section-eyebrow">[02] · diagnóstico</span>
           <h2 id="diag-title" class="section-title">
-            Del grÃ¡fico al proceso<br>en <em>un clic</em>.
+            Del gráfico al proceso<br>en <em>un clic</em>.
           </h2>
           <p>
-            Cuando CPU sube al 90%, no querÃ©s abrir cinco terminales para encontrar
+            Cuando CPU sube al 90%, no querés abrir cinco terminales para encontrar
             el proceso culpable. Zyntra lee <code>top</code>, <code>ps aux</code> y
             <code>vmstat</code> en el mismo ciclo y te muestra el contexto completo
-            en el panel de diagnÃ³stico.
+            en el panel de diagnóstico.
           </p>
           <ul class="bullets">
-            <li><span aria-hidden="true">âŠ•</span> Top de procesos con CPU y RSS por nodo.</li>
-            <li><span aria-hidden="true">âŠ•</span> Load average, iowait e interrupciones del kernel.</li>
-            <li><span aria-hidden="true">âŠ•</span> Snapshot de estado al momento exacto de la alerta.</li>
-            <li><span aria-hidden="true">âŠ•</span> Diff de configuraciÃ³n entre snapshots consecutivos.</li>
+            <li><span aria-hidden="true">⊕</span> Top de procesos con CPU y RSS por nodo.</li>
+            <li><span aria-hidden="true">⊕</span> Load average, iowait e interrupciones del kernel.</li>
+            <li><span aria-hidden="true">⊕</span> Snapshot de estado al momento exacto de la alerta.</li>
+            <li><span aria-hidden="true">⊕</span> Diff de configuración entre snapshots consecutivos.</li>
           </ul>
         </div>
         <div class="split-visual reveal" aria-hidden="true">
           <div class="ascii-panel">
             <div class="ascii-head">
-              <span>â—‰ servidor-1 Â· diagnÃ³stico</span>
+              <span>◉ servidor-1 · diagnóstico</span>
               <span class="ascii-time" id="ascii-time-1">--:--:--</span>
             </div>
             <pre class="ascii-body">
-load average  â”ƒ <em>2.41</em>  1.87  1.42
-cpu(%)        â”ƒ â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–†â–…â–ƒ <em>78.2</em>
-mem(%)        â”ƒ â–‡â–‡â–‡â–‡â–‡â–‡â–‡â–†â–…â–ƒâ–‚â–__ <em>61.0</em>
-swap(%)       â”ƒ â–‚â–‚â–____________ <em>3.1</em>
-iowait(%)     â”ƒ â–‡â–‡â–‡â–‡â–…â–ƒâ–_______ <em>18.4</em>
-disk /var     â”ƒ â–‡â–‡â–‡â–‡â–‡â–‡â–†â–…â–ƒâ–____ <em>43.7</em>
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+load average  ┃ <em>2.41</em>  1.87  1.42
+cpu(%)        ┃ ▇▇▇▇▇▇▇▇▇▇▇▆▅▃ <em>78.2</em>
+mem(%)        ┃ ▇▇▇▇▇▇▇▆▅▃▂▁__ <em>61.0</em>
+swap(%)       ┃ ▂▂▁____________ <em>3.1</em>
+iowait(%)     ┃ ▇▇▇▇▅▃▁_______ <em>18.4</em>
+disk /var     ┃ ▇▇▇▇▇▇▆▅▃▁____ <em>43.7</em>
+─────────────────────────────────────
 top procesos
-  pid 4128  â”ƒ postgres   â”ƒ <em>41.2%</em> cpu
-  pid 8821  â”ƒ redis-svr  â”ƒ <em>12.8%</em> cpu
-  pid 2014  â”ƒ nginx      â”ƒ  3.4% cpu
-  pid 5509  â”ƒ journald   â”ƒ  0.9% cpu</pre>
+  pid 4128  ┃ postgres   ┃ <em>41.2%</em> cpu
+  pid 8821  ┃ redis-svr  ┃ <em>12.8%</em> cpu
+  pid 2014  ┃ nginx      ┃  3.4% cpu
+  pid 5509  ┃ journald   ┃  0.9% cpu</pre>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ ARQUITECTURA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── ARQUITECTURA ───────────────────────────────────────── -->
     <section id="arquitectura" class="section" aria-labelledby="arch-title">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[03] Â· arquitectura</span>
+          <span class="section-eyebrow">[03] · arquitectura</span>
           <h2 id="arch-title" class="section-title">
             Un <em>equipo de control</em>.<br>Cuatro servidores Linux. <em>Cero agentes</em>.
           </h2>
           <p class="section-lead">
-            El controlador â€” cualquier servidor, PC o VM de tu red â€” corre Zyntra y abre sesiones SSH
-            hacia los nodos Linux monitoreados. No instalÃ¡s nada en producciÃ³n: solo agregÃ¡s una clave pÃºblica ed25519.
-            Todo el trÃ¡fico permanece dentro de tu red interna.
+            El controlador — cualquier servidor, PC o VM de tu red — corre Zyntra y abre sesiones SSH
+            hacia los nodos Linux monitoreados. No instalás nada en producción: solo agregás una clave pública ed25519.
+            Todo el tráfico permanece dentro de tu red interna.
           </p>
         </header>
 
@@ -246,8 +246,8 @@ top procesos
           <div class="arch-pi">
             <span class="arch-pi-label">controlador central</span>
             <span class="arch-pi-name">Nodo Zyntra</span>
-            <span class="arch-pi-meta">zyntra.lan Â· <em>192.168.10.4</em></span>
-            <span class="arch-pi-meta">Zyntra v2.4 Â· <em>online</em></span>
+            <span class="arch-pi-meta">zyntra.lan · <em>192.168.10.4</em></span>
+            <span class="arch-pi-meta">Zyntra v2.4 · <em>online</em></span>
           </div>
           <div class="arch-fan" aria-hidden="true">
             <span class="arch-line" data-line="1"></span>
@@ -257,54 +257,54 @@ top procesos
           </div>
           <div class="arch-nodes">
             <div class="arch-node">
-              <span class="arch-node-pin" aria-hidden="true">â—‰</span>
+              <span class="arch-node-pin" aria-hidden="true">◉</span>
               <h4>Servidor 1</h4>
               <span class="arch-node-role">Base de datos primaria</span>
-              <span class="arch-node-meta">postgres Â· 16 vCPU Â· Debian</span>
+              <span class="arch-node-meta">postgres · 16 vCPU · Debian</span>
             </div>
             <div class="arch-node">
-              <span class="arch-node-pin" aria-hidden="true">â—‰</span>
+              <span class="arch-node-pin" aria-hidden="true">◉</span>
               <h4>Servidor 2</h4>
               <span class="arch-node-role">Worker de procesamiento</span>
-              <span class="arch-node-meta">python Â· 8 vCPU Â· Ubuntu 24</span>
+              <span class="arch-node-meta">python · 8 vCPU · Ubuntu 24</span>
             </div>
             <div class="arch-node">
-              <span class="arch-node-pin" aria-hidden="true">â—‰</span>
+              <span class="arch-node-pin" aria-hidden="true">◉</span>
               <h4>Servidor 3</h4>
-              <span class="arch-node-role">Proxy inverso y cachÃ©</span>
-              <span class="arch-node-meta">nginx Â· redis Â· Rocky Linux</span>
+              <span class="arch-node-role">Proxy inverso y caché</span>
+              <span class="arch-node-meta">nginx · redis · Rocky Linux</span>
             </div>
             <div class="arch-node arch-node--alert">
-              <span class="arch-node-pin alert" aria-hidden="true">â—</span>
+              <span class="arch-node-pin alert" aria-hidden="true">●</span>
               <h4>Servidor 4</h4>
               <span class="arch-node-role">Almacenamiento de objetos</span>
-              <span class="arch-node-meta">disk /var @ 91% Â· <em>alerta activa</em></span>
+              <span class="arch-node-meta">disk /var @ 91% · <em>alerta activa</em></span>
             </div>
           </div>
         </div>
 
         <div class="arch-legend reveal" aria-label="Referencias del diagrama">
-          <span><span class="legend-ok" aria-hidden="true">â—‰</span> Nodo online</span>
-          <span><span class="legend-alert" aria-hidden="true">â—</span> Alerta activa</span>
-          <span><span class="legend-line" aria-hidden="true">â”€ â”€</span> ConexiÃ³n SSH Â· ed25519</span>
+          <span><span class="legend-ok" aria-hidden="true">◉</span> Nodo online</span>
+          <span><span class="legend-alert" aria-hidden="true">●</span> Alerta activa</span>
+          <span><span class="legend-line" aria-hidden="true">─ ─</span> Conexión SSH · ed25519</span>
           <span><span class="legend-badge" aria-hidden="true">0B</span> Sin agentes instalados</span>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ TERMINAL SPLIT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── TERMINAL SPLIT ─────────────────────────────────────── -->
     <section class="section split reverse" aria-labelledby="terminal-title">
       <div class="container split-grid">
         <div class="split-visual reveal" aria-hidden="true">
           <div class="ascii-panel">
             <div class="ascii-head">
-              <span>â—‰ servidor-3 Â· ssh whitelist</span>
+              <span>◉ servidor-3 · ssh whitelist</span>
               <span class="ascii-time" id="ascii-time-2">--:--:--</span>
             </div>
             <pre class="ascii-body">
 $ <em>systemctl status nginx</em>
-  â— nginx â€” active (running) Â· 18d 4h
-    mem: 14.2M Â· tasks: 4
+  ● nginx — active (running) · 18d 4h
+    mem: 14.2M · tasks: 4
 
 $ <em>journalctl -n 20 -u nginx --no-pager</em>
   may 27 02:11 nginx[812]: upstream timed out
@@ -315,31 +315,31 @@ $ <em>ss -tulpn | grep :443</em>
   tcp LISTEN *:443 users:(nginx,pid=812))
 
 $ <em>rm -rf /var/log/nginx</em>
-  âŠ— bloqueado por whitelist
-  âŠ— evento registrado Â· ops Â· 14:22:09</pre>
+  ⊗ bloqueado por whitelist
+  ⊗ evento registrado · ops · 14:22:09</pre>
           </div>
         </div>
         <div class="split-text reveal">
-          <span class="section-eyebrow">[04] Â· terminal segura</span>
+          <span class="section-eyebrow">[04] · terminal segura</span>
           <h2 id="terminal-title" class="section-title">
             SSH <em>auditada</em>,<br>no SSH <em>libre</em>.
           </h2>
           <p>
             La terminal integrada no es un shell abierto. Es una interfaz de comandos
-            con whitelist definida por equipo y rol. Lo que no estÃ© autorizado se bloquea
+            con whitelist definida por equipo y rol. Lo que no esté autorizado se bloquea
             y se registra con timestamp, usuario y servidor.
           </p>
           <ul class="bullets">
-            <li><span aria-hidden="true">âŠ•</span> Whitelist por rol: ops, lectura, on-call.</li>
-            <li><span aria-hidden="true">âŠ•</span> Soporte para <code>systemctl</code>, <code>journalctl</code>, <code>ss</code>, <code>df</code>.</li>
-            <li><span aria-hidden="true">âŠ•</span> Sesiones grabadas, exportables a JSON.</li>
-            <li><span aria-hidden="true">âŠ•</span> RotaciÃ³n de claves SSH ed25519 desde el panel.</li>
+            <li><span aria-hidden="true">⊕</span> Whitelist por rol: ops, lectura, on-call.</li>
+            <li><span aria-hidden="true">⊕</span> Soporte para <code>systemctl</code>, <code>journalctl</code>, <code>ss</code>, <code>df</code>.</li>
+            <li><span aria-hidden="true">⊕</span> Sesiones grabadas, exportables a JSON.</li>
+            <li><span aria-hidden="true">⊕</span> Rotación de claves SSH ed25519 desde el panel.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ LEAD MAGNET â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── LEAD MAGNET ────────────────────────────────────────── -->
     <section class="section lead-magnet-section" aria-labelledby="lm-title">
       <div class="container">
         <div class="lead-magnet reveal">
@@ -348,72 +348,72 @@ $ <em>rm -rf /var/log/nginx</em>
               <span class="lm-dot lm-dot--red"></span>
               <span class="lm-dot lm-dot--yellow"></span>
               <span class="lm-dot lm-dot--green"></span>
-              <span class="lm-term-title">install.sh Â· nodo-control</span>
+              <span class="lm-term-title">install.sh · nodo-control</span>
             </div>
             <div class="lm-term-body">
               <div class="lm-line"><span class="lm-prompt">ops@zyntra:~$</span><span class="lm-cmd"> curl -fsSL get.zyntra.dev | sh</span></div>
-              <div class="lm-line lm-out">âŠ• detectando sistema Â· Linux x86_64</div>
-              <div class="lm-line lm-out">âŠ• Python 3.11 ok Â· SQLite 3.41 ok</div>
-              <div class="lm-line lm-out">âŠ• generando claves SSH Â· ed25519</div>
-              <div class="lm-line lm-out">âŠ• creando servicio systemd Â· zyntra.service</div>
-              <div class="lm-line lm-out">âŠ• inicializando SQLite Â· retenciÃ³n 30d</div>
+              <div class="lm-line lm-out">⊕ detectando sistema · Linux x86_64</div>
+              <div class="lm-line lm-out">⊕ Python 3.11 ok · SQLite 3.41 ok</div>
+              <div class="lm-line lm-out">⊕ generando claves SSH · ed25519</div>
+              <div class="lm-line lm-out">⊕ creando servicio systemd · zyntra.service</div>
+              <div class="lm-line lm-out">⊕ inicializando SQLite · retención 30d</div>
               <div class="lm-line"><span class="lm-prompt">ops@zyntra:~$</span><span class="lm-cmd"> zyntra node add 192.168.10.10 --user ops</span></div>
-              <div class="lm-line lm-out">â—‰ handshake SSH ok Â· nodo registrado</div>
-              <div class="lm-line lm-ok">âœ“ dashboard listo Â· http://zyntra.lan:7080</div>
+              <div class="lm-line lm-out">◉ handshake SSH ok · nodo registrado</div>
+              <div class="lm-line lm-ok">✓ dashboard listo · http://zyntra.lan:7080</div>
               <div class="lm-line"><span class="lm-prompt">ops@zyntra:~$</span><span class="lm-cursor"></span></div>
             </div>
           </div>
           <div class="lead-magnet-copy">
             <span class="section-eyebrow">[recurso gratuito]</span>
-            <h2 id="lm-title">GuÃ­a de despliegue en <em>tu hardware</em></h2>
+            <h2 id="lm-title">Guía de despliegue en <em>tu hardware</em></h2>
             <p>
-              48 pÃ¡ginas. Desde instalaciÃ³n en cualquier servidor o equipo hasta
+              48 páginas. Desde instalación en cualquier servidor o equipo hasta
               Zyntra monitoreando cuatro servidores Linux. Funciona en bare metal,
               VM, Windows, macOS o cualquier equipo con acceso SSH a tu red.
             </p>
             <ul class="bullets">
-              <li><span aria-hidden="true">âŠ•</span> Setup en cualquier servidor: Linux, Windows, macOS, VM.</li>
-              <li><span aria-hidden="true">âŠ•</span> ConfiguraciÃ³n de claves ed25519 por servidor.</li>
-              <li><span aria-hidden="true">âŠ•</span> Plantillas de alertas para Slack y Teams.</li>
-              <li><span aria-hidden="true">âŠ•</span> Script de backup automÃ¡tico de la BD SQLite.</li>
+              <li><span aria-hidden="true">⊕</span> Setup en cualquier servidor: Linux, Windows, macOS, VM.</li>
+              <li><span aria-hidden="true">⊕</span> Configuración de claves ed25519 por servidor.</li>
+              <li><span aria-hidden="true">⊕</span> Plantillas de alertas para Slack y Teams.</li>
+              <li><span aria-hidden="true">⊕</span> Script de backup automático de la BD SQLite.</li>
             </ul>
-            <form class="inline-form" id="form-guide" name="guia" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Descargar guÃ­a gratuita">
+            <form class="inline-form" id="form-guide" name="guia" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Descargar guía gratuita">
               <input type="hidden" name="form-name" value="guia">
               <input type="hidden" name="bot-field" style="display:none">
-              <label class="visually-hidden" for="lm-email">Correo electrÃ³nico</label>
+              <label class="visually-hidden" for="lm-email">Correo electrónico</label>
               <input id="lm-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
-              <button type="submit" class="btn btn-primary">Descargar PDF <span aria-hidden="true">â†“</span></button>
+              <button type="submit" class="btn btn-primary">Descargar PDF <span aria-hidden="true">↓</span></button>
             </form>
-            <span class="lead-magnet-meta">PDF Â· 4.2 MB Â· castellano Â· CC-BY-SA Â· sin registro</span>
+            <span class="lead-magnet-meta">PDF · 4.2 MB · castellano · CC-BY-SA · sin registro</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ INCIDENTES SPLIT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── INCIDENTES SPLIT ───────────────────────────────────── -->
     <section class="section split" aria-labelledby="incidents-title">
       <div class="container split-grid">
         <div class="split-text reveal">
-          <span class="section-eyebrow">[05] Â· incidentes</span>
+          <span class="section-eyebrow">[05] · incidentes</span>
           <h2 id="incidents-title" class="section-title">
-            DetectÃ¡ el <em>incidente real</em>,<br>no el ruido.
+            Detectá el <em>incidente real</em>,<br>no el ruido.
           </h2>
           <p>
-            Las reglas combinan mÃ©tricas: disco al 90% + errores 5xx en nginx + caÃ­da
+            Las reglas combinan métricas: disco al 90% + errores 5xx en nginx + caída
             de respuesta = un solo aviso correlacionado. No tres mails que se ignoran
             mientras el servidor se degrada.
           </p>
           <p>
             Cada alerta incluye snapshot del estado del kernel, top de procesos y
-            Ãºltimas lÃ­neas de journalctl del servicio afectado.
+            últimas líneas de journalctl del servicio afectado.
           </p>
           <blockquote class="testimonial-inline">
-            <p>Â«El servidor de base de datos estaba con PostgreSQL al 84% de CPU desde hacÃ­a dos horas antes de que yo lo viera. Con Zyntra recibo la alerta a los 90 segundos de cruzar el umbral, con el PID culpable en el mismo mensaje.Â»</p>
+            <p>«El servidor de base de datos estaba con PostgreSQL al 84% de CPU desde hacía dos horas antes de que yo lo viera. Con Zyntra recibo la alerta a los 90 segundos de cruzar el umbral, con el PID culpable en el mismo mensaje.»</p>
             <footer>
               <span class="avatar" aria-hidden="true">AV</span>
               <span>
-                <span class="t-name">AndrÃ©s Villalba</span>
-                <span class="t-role">Infrastructure Lead Â· Banco Regional del Sur</span>
+                <span class="t-name">Andrés Villalba</span>
+                <span class="t-role">Infrastructure Lead · Banco Regional del Sur</span>
               </span>
             </footer>
           </blockquote>
@@ -421,37 +421,37 @@ $ <em>rm -rf /var/log/nginx</em>
         <div class="split-visual reveal" aria-hidden="true">
           <div class="ascii-panel">
             <div class="ascii-head">
-              <span>â—‰ alertas Â· ventana 24h</span>
+              <span>◉ alertas · ventana 24h</span>
               <span class="ascii-time" id="ascii-time-3">--:--:--</span>
             </div>
             <pre class="ascii-body">
-[14:08]  srv-4  disk /var       <em class="warn">â–² 91%</em>
-[13:54]  srv-4  iowait          <em class="warn">â–² 22%</em>
-[13:51]  srv-4  nginx 5xx        <em class="warn">â–² 0.4%</em>
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-correlaciÃ³n  â”ƒ <em>incidente: storage</em>
-afectados    â”ƒ srv-4 (primario)
-             â”ƒ srv-3 (upstream caÃ­do)
-causa        â”ƒ /var/log sin rotar Â· 91% disk
-acciÃ³n       â”ƒ journalctl --vacuum-size=500M
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-[09:12]  srv-2  ssh login        â—‰ ok
-[08:40]  srv-1  wal archive      â—‰ ok</pre>
+[14:08]  srv-4  disk /var       <em class="warn">▲ 91%</em>
+[13:54]  srv-4  iowait          <em class="warn">▲ 22%</em>
+[13:51]  srv-4  nginx 5xx        <em class="warn">▲ 0.4%</em>
+─────────────────────────────────────
+correlación  ┃ <em>incidente: storage</em>
+afectados    ┃ srv-4 (primario)
+             ┃ srv-3 (upstream caído)
+causa        ┃ /var/log sin rotar · 91% disk
+acción       ┃ journalctl --vacuum-size=500M
+─────────────────────────────────────
+[09:12]  srv-2  ssh login        ◉ ok
+[08:40]  srv-1  wal archive      ◉ ok</pre>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- â”€â”€ COMPARATIVA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── COMPARATIVA ────────────────────────────────────────── -->
     <section id="comparativa" class="section section-compare" aria-labelledby="compare-title">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[06] Â· comparativa</span>
+          <span class="section-eyebrow">[06] · comparativa</span>
           <h2 id="compare-title" class="section-title">
-            Â¿Por quÃ© Zyntra<br>y no <em>la alternativa obvia</em>?
+            ¿Por qué Zyntra<br>y no <em>la alternativa obvia</em>?
           </h2>
           <p class="section-lead">
-            Grafana, Zabbix y Datadog son herramientas poderosas â€” y tambiÃ©n son
+            Grafana, Zabbix y Datadog son herramientas poderosas — y también son
             infraestructura extra que mantener, licencias que pagar o datos que salen
             de tu red. Zyntra hace una cosa y la hace bien.
           </p>
@@ -460,7 +460,7 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
         <div class="compare-table reveal" role="table" aria-label="Comparativa Zyntra vs alternativas">
           <div class="compare-head" role="rowgroup">
             <div class="compare-row compare-row--head" role="row">
-              <div class="compare-cell compare-cell--feature" role="columnheader">CaracterÃ­stica</div>
+              <div class="compare-cell compare-cell--feature" role="columnheader">Característica</div>
               <div class="compare-cell compare-cell--zyntra" role="columnheader">Zyntra</div>
               <div class="compare-cell" role="columnheader">Grafana + Prometheus</div>
               <div class="compare-cell" role="columnheader">Zabbix</div>
@@ -469,50 +469,50 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
           </div>
           <div class="compare-body" role="rowgroup">
             <div class="compare-row" role="row">
-              <div class="compare-cell compare-cell--feature" role="cell">InstalaciÃ³n en producciÃ³n</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ Cero agentes</span></div>
+              <div class="compare-cell compare-cell--feature" role="cell">Instalación en producción</div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ Cero agentes</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">node_exporter en cada nodo</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">Agente Zabbix en cada nodo</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">dd-agent en cada nodo</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Tiempo de puesta en marcha</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ &lt; 15 minutos</span></div>
-              <div class="compare-cell" role="cell"><span class="c-bad">4â€“8 horas mÃ­nimo</span></div>
-              <div class="compare-cell" role="cell"><span class="c-bad">1â€“2 dÃ­as con BBDD</span></div>
-              <div class="compare-cell" role="cell"><span class="c-mid">1â€“2 horas + tarjeta</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ &lt; 15 minutos</span></div>
+              <div class="compare-cell" role="cell"><span class="c-bad">4–8 horas mínimo</span></div>
+              <div class="compare-cell" role="cell"><span class="c-bad">1–2 días con BBDD</span></div>
+              <div class="compare-cell" role="cell"><span class="c-mid">1–2 horas + tarjeta</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Tus datos salen de la red</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ JamÃ¡s. Solo red interna</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ Jamás. Solo red interna</span></div>
               <div class="compare-cell" role="cell"><span class="c-ok">No (self-hosted)</span></div>
               <div class="compare-cell" role="cell"><span class="c-ok">No (self-hosted)</span></div>
-              <div class="compare-cell" role="cell"><span class="c-bad">SÃ­. SaaS obligatorio</span></div>
+              <div class="compare-cell" role="cell"><span class="c-bad">Sí. SaaS obligatorio</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Costo mensual</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ $0 Â· hardware propio</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ $0 · hardware propio</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">$0 + infra + tiempo</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">$0 + infra + soporte</span></div>
               <div class="compare-cell" role="cell"><span class="c-bad">~$25/nodo/mes</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Terminal SSH integrada</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ SÃ­ Â· con whitelist</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ Sí · con whitelist</span></div>
               <div class="compare-cell" role="cell"><span class="c-bad">No</span></div>
               <div class="compare-cell" role="cell"><span class="c-bad">No</span></div>
               <div class="compare-cell" role="cell"><span class="c-bad">No</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Curva de aprendizaje</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ README + 1 tarde</span></div>
-              <div class="compare-cell" role="cell"><span class="c-bad">Alta Â· PromQL + Grafana</span></div>
-              <div class="compare-cell" role="cell"><span class="c-bad">Alta Â· interfaz compleja</span></div>
-              <div class="compare-cell" role="cell"><span class="c-mid">Media Â· muy completo</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ README + 1 tarde</span></div>
+              <div class="compare-cell" role="cell"><span class="c-bad">Alta · PromQL + Grafana</span></div>
+              <div class="compare-cell" role="cell"><span class="c-bad">Alta · interfaz compleja</span></div>
+              <div class="compare-cell" role="cell"><span class="c-mid">Media · muy completo</span></div>
             </div>
             <div class="compare-row" role="row">
               <div class="compare-cell compare-cell--feature" role="cell">Modo NOC pantalla completa</div>
-              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">â—‰ Nativo Â· un clic</span></div>
+              <div class="compare-cell compare-cell--zyntra" role="cell"><span class="c-ok">◉ Nativo · un clic</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">Configurable con trabajo</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">Vistas de mapa</span></div>
               <div class="compare-cell" role="cell"><span class="c-mid">Dashboards personalizables</span></div>
@@ -522,43 +522,43 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
       </div>
     </section>
 
-    <!-- â”€â”€ TESTIMONIOS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── TESTIMONIOS ────────────────────────────────────────── -->
     <section class="section" aria-labelledby="testi-title">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[07] Â· equipo</span>
+          <span class="section-eyebrow">[07] · equipo</span>
           <h2 id="testi-title" class="section-title">
             Lo usan equipos que<br><em>cuidan su Linux</em>.
           </h2>
         </header>
         <div class="testimonials-grid">
           <blockquote class="testimonial reveal">
-            <p>Â«Reemplazamos un Zabbix de seis aÃ±os en dos tardes. La curva de aprendizaje fue bÃ¡sicamente leer el README y agregar las claves SSH.Â»</p>
+            <p>«Reemplazamos un Zabbix de seis años en dos tardes. La curva de aprendizaje fue básicamente leer el README y agregar las claves SSH.»</p>
             <footer>
               <span class="avatar" aria-hidden="true">LV</span>
               <div>
-                <span class="t-name">LucÃ­a ValdÃ©s</span>
-                <span class="t-role">DevOps Lead Â· Astra LogÃ­stica</span>
+                <span class="t-name">Lucía Valdés</span>
+                <span class="t-role">DevOps Lead · Astra Logística</span>
               </div>
             </footer>
           </blockquote>
           <blockquote class="testimonial reveal">
-            <p>Â«La whitelist de SSH fue lo que convenciÃ³ a seguridad. Antes no querÃ­amos ni hablar de un panel web apuntando a producciÃ³n. Ahora lo tenemos en el rack.Â»</p>
+            <p>«La whitelist de SSH fue lo que convenció a seguridad. Antes no queríamos ni hablar de un panel web apuntando a producción. Ahora lo tenemos en el rack.»</p>
             <footer>
               <span class="avatar" aria-hidden="true">JP</span>
               <div>
-                <span class="t-name">JoaquÃ­n PÃ©rez</span>
-                <span class="t-role">CISO Â· Banco Solar</span>
+                <span class="t-name">Joaquín Pérez</span>
+                <span class="t-role">CISO · Banco Solar</span>
               </div>
             </footer>
           </blockquote>
           <blockquote class="testimonial reveal">
-            <p>Â«Un mini PC viejo en el rack, cuatro servidores Linux vigilados y un TV en la sala con el modo NOC. Cualquier tÃ©cnico que pasa puede ver el estado de todo de un vistazo.Â»</p>
+            <p>«Un mini PC viejo en el rack, cuatro servidores Linux vigilados y un TV en la sala con el modo NOC. Cualquier técnico que pasa puede ver el estado de todo de un vistazo.»</p>
             <footer>
               <span class="avatar" aria-hidden="true">CG</span>
               <div>
                 <span class="t-name">Camila Greco</span>
-                <span class="t-role">Lead SRE Â· Estudio Nodal</span>
+                <span class="t-role">Lead SRE · Estudio Nodal</span>
               </div>
             </footer>
           </blockquote>
@@ -566,17 +566,17 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
       </div>
     </section>
 
-    <!-- â”€â”€ PRECIOS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── PRECIOS ─────────────────────────────────────────────── -->
     <section id="precios" class="section" aria-labelledby="precios-title">
       <div class="container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[08] Â· precios</span>
+          <span class="section-eyebrow">[08] · precios</span>
           <h2 id="precios-title" class="section-title">
             Gratis para arrancar.<br><em>Serio</em> cuando el equipo crece.
           </h2>
           <p class="section-lead">
-            Community es y serÃ¡ siempre gratuito. Enterprise agrega roles, SSO,
-            retenciÃ³n extendida y soporte con SLA en castellano.
+            Community es y será siempre gratuito. Enterprise agrega roles, SSO,
+            retención extendida y soporte con SLA en castellano.
           </p>
         </header>
         <div class="pricing-grid">
@@ -584,23 +584,23 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
           <article class="price-card reveal" aria-label="Plan Community gratuito">
             <header>
               <span class="price-tag">Community</span>
-              <p class="price-amount">$0<span>/mes Â· para siempre</span></p>
+              <p class="price-amount">$0<span>/mes · para siempre</span></p>
               <p class="price-sub">Para sysadmins y equipos con hasta 8 servidores Linux.</p>
             </header>
             <ul class="price-features">
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Hasta 8 nodos Linux monitoreados</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> MÃ©tricas CPU, RAM, disco, red, I/O</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Historial SQLite 30 dÃ­as</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Terminal SSH con whitelist</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Alertas a webhook genÃ©rico</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Modo NOC pantalla completa</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Compatible con Debian, Ubuntu, Rocky, RHEL</li>
-              <li><span class="no" aria-hidden="true">â€”</span> Usuarios y roles mÃºltiples</li>
-              <li><span class="no" aria-hidden="true">â€”</span> SSO / LDAP / Active Directory</li>
-              <li><span class="no" aria-hidden="true">â€”</span> RetenciÃ³n extendida (hasta 1 aÃ±o)</li>
-              <li><span class="no" aria-hidden="true">â€”</span> Soporte con SLA garantizado</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Hasta 8 nodos Linux monitoreados</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Métricas CPU, RAM, disco, red, I/O</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Historial SQLite 30 días</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Terminal SSH con whitelist</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Alertas a webhook genérico</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Modo NOC pantalla completa</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Compatible con Debian, Ubuntu, Rocky, RHEL</li>
+              <li><span class="no" aria-hidden="true">—</span> Usuarios y roles múltiples</li>
+              <li><span class="no" aria-hidden="true">—</span> SSO / LDAP / Active Directory</li>
+              <li><span class="no" aria-hidden="true">—</span> Retención extendida (hasta 1 año)</li>
+              <li><span class="no" aria-hidden="true">—</span> Soporte con SLA garantizado</li>
             </ul>
-            <a href="#cta" class="btn btn-ghost btn-block">Descargar binario <span aria-hidden="true">â†“</span></a>
+            <a href="#cta" class="btn btn-ghost btn-block">Descargar binario <span aria-hidden="true">↓</span></a>
           </article>
 
           <article class="price-card featured reveal" aria-label="Plan Enterprise para equipos">
@@ -611,20 +611,20 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
               <p class="price-sub">Para flotas distribuidas, multi-sede y entornos regulados con Linux.</p>
             </header>
             <ul class="price-features">
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Nodos Linux ilimitados</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Todo lo de Community</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Usuarios, roles y permisos granulares</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> SSO, LDAP, SAML 2.0</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> RetenciÃ³n configurable hasta 1 aÃ±o</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Notificaciones: Slack, Teams, PagerDuty, Webhook</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> API REST documentada (OpenAPI)</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> AuditorÃ­a exportable y firmada</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Onboarding asistido en remoto</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Soporte 24/7 en castellano Â· SLA 4h</li>
-              <li><span class="c-ok" aria-hidden="true">âœ“</span> Actualizaciones prioritarias</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Nodos Linux ilimitados</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Todo lo de Community</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Usuarios, roles y permisos granulares</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> SSO, LDAP, SAML 2.0</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Retención configurable hasta 1 año</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Notificaciones: Slack, Teams, PagerDuty, Webhook</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> API REST documentada (OpenAPI)</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Auditoría exportable y firmada</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Onboarding asistido en remoto</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Soporte 24/7 en castellano · SLA 4h</li>
+              <li><span class="c-ok" aria-hidden="true">✓</span> Actualizaciones prioritarias</li>
             </ul>
             <button type="button" class="btn btn-primary btn-block" id="btn-enterprise">
-              Hablar con ventas <span aria-hidden="true">â†’</span>
+              Hablar con ventas <span aria-hidden="true">→</span>
             </button>
           </article>
 
@@ -632,11 +632,11 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
       </div>
     </section>
 
-    <!-- â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── FAQ ────────────────────────────────────────────────── -->
     <section id="faq" class="section" aria-labelledby="faq-title">
       <div class="container faq-container">
         <header class="section-head reveal">
-          <span class="section-eyebrow">[09] Â· preguntas frecuentes</span>
+          <span class="section-eyebrow">[09] · preguntas frecuentes</span>
           <h2 id="faq-title" class="section-title">
             Lo que <em>siempre</em> nos preguntan.
           </h2>
@@ -645,27 +645,27 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
 
           <details class="faq-item">
             <summary>
-              <span class="faq-q">Â¿En quÃ© hardware puedo desplegar Zyntra?</span>
+              <span class="faq-q">¿En qué hardware puedo desplegar Zyntra?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
             </summary>
             <div class="faq-a">
-              <p>Cualquier servidor o equipo encendido y conectado a tu red: Linux, Windows, macOS, una VM, un VPS privado o una Raspberry Pi. El requisito es Python 3.8+, 512 MB de RAM y conectividad SSH hacia los nodos Linux que querÃ©s monitorear. El instalador es un solo script <code>curl | sh</code> (o el ejecutable nativo en Windows) que configura Python, SQLite, claves ed25519 y el servicio del sistema.</p>
+              <p>Cualquier servidor o equipo encendido y conectado a tu red: Linux, Windows, macOS, una VM, un VPS privado o una Raspberry Pi. El requisito es Python 3.8+, 512 MB de RAM y conectividad SSH hacia los nodos Linux que querés monitorear. El instalador es un solo script <code>curl | sh</code> (o el ejecutable nativo en Windows) que configura Python, SQLite, claves ed25519 y el servicio del sistema.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>
-              <span class="faq-q">Â¿CÃ³mo funciona la seguridad del acceso SSH a los servidores?</span>
+              <span class="faq-q">¿Cómo funciona la seguridad del acceso SSH a los servidores?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
             </summary>
             <div class="faq-a">
-              <p>Zyntra usa claves ed25519 generadas en el primer arranque. Nunca almacena contraseÃ±as. Recomendamos crear un usuario de sistema dedicado en cada servidor Linux con permisos mÃ­nimos (<code>AllowUsers zyntra</code> en sshd_config). La terminal integrada solo ejecuta comandos de la whitelist configurada por rol. Cada sesiÃ³n queda registrada con timestamp, usuario y output completo.</p>
+              <p>Zyntra usa claves ed25519 generadas en el primer arranque. Nunca almacena contraseñas. Recomendamos crear un usuario de sistema dedicado en cada servidor Linux con permisos mínimos (<code>AllowUsers zyntra</code> en sshd_config). La terminal integrada solo ejecuta comandos de la whitelist configurada por rol. Cada sesión queda registrada con timestamp, usuario y output completo.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>
-              <span class="faq-q">Â¿Con quÃ© distribuciones Linux es compatible?</span>
+              <span class="faq-q">¿Con qué distribuciones Linux es compatible?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
             </summary>
             <div class="faq-a">
@@ -675,21 +675,21 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
 
           <details class="faq-item">
             <summary>
-              <span class="faq-q">Â¿QuÃ© impacto tiene en los servidores Linux monitoreados?</span>
+              <span class="faq-q">¿Qué impacto tiene en los servidores Linux monitoreados?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
             </summary>
             <div class="faq-a">
-              <p>PrÃ¡cticamente cero. Cada ciclo de recolecciÃ³n ejecuta lecturas de <code>/proc/stat</code>, <code>/proc/meminfo</code> y <code>df</code> vÃ­a SSH â€” menos de 0.05% de CPU en servidores modernos. El intervalo de polling es configurable: 2 segundos por defecto, ajustable hasta 60 segundos. No se instala ningÃºn proceso permanente ni daemon en los servidores monitoreados.</p>
+              <p>Prácticamente cero. Cada ciclo de recolección ejecuta lecturas de <code>/proc/stat</code>, <code>/proc/meminfo</code> y <code>df</code> vía SSH — menos de 0.05% de CPU en servidores modernos. El intervalo de polling es configurable: 2 segundos por defecto, ajustable hasta 60 segundos. No se instala ningún proceso permanente ni daemon en los servidores monitoreados.</p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>
-              <span class="faq-q">Â¿Puedo conectar Zyntra a Slack, Teams o mi sistema de alertas?</span>
+              <span class="faq-q">¿Puedo conectar Zyntra a Slack, Teams o mi sistema de alertas?</span>
               <span class="faq-icon" aria-hidden="true">+</span>
             </summary>
             <div class="faq-a">
-              <p>SÃ­. Las alertas se enrutan a un webhook genÃ©rico (JSON configurable), SMTP o cualquier endpoint HTTP. Hay plantillas listas para Slack, Teams, Mattermost, Rocket.Chat y PagerDuty en la guÃ­a de despliegue. En Enterprise, la API REST expone todos los endpoints de mÃ©tricas histÃ³ricas para integraciÃ³n con Grafana u otros sistemas internos.</p>
+              <p>Sí. Las alertas se enrutan a un webhook genérico (JSON configurable), SMTP o cualquier endpoint HTTP. Hay plantillas listas para Slack, Teams, Mattermost, Rocket.Chat y PagerDuty en la guía de despliegue. En Enterprise, la API REST expone todos los endpoints de métricas históricas para integración con Grafana u otros sistemas internos.</p>
             </div>
           </details>
 
@@ -697,42 +697,42 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
       </div>
     </section>
 
-    <!-- â”€â”€ CTA FINAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <!-- ── CTA FINAL ───────────────────────────────────────────── -->
     <section id="cta" class="section cta-section" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-inner reveal">
-          <span class="section-eyebrow">[10] Â· acceso anticipado</span>
+          <span class="section-eyebrow">[10] · acceso anticipado</span>
           <h2 id="cta-title" class="cta-title">
-            EmpezÃ¡ a ver tu<br><em>infraestructura Linux</em><br>como deberÃ­a verse.
+            Empezá a ver tu<br><em>infraestructura Linux</em><br>como debería verse.
           </h2>
           <p class="cta-lead">
-            Desde instalaciÃ³n limpia a dashboard operacional en menos de 15 minutos.
+            Desde instalación limpia a dashboard operacional en menos de 15 minutos.
             Sin cuentas cloud, sin costos recurrentes, sin datos que salgan de tu red.
           </p>
           <form class="inline-form inline-form-lg" id="form-cta" name="acceso-cta" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Solicitar acceso">
             <input type="hidden" name="form-name" value="acceso-cta">
             <input type="hidden" name="bot-field" style="display:none">
-            <label class="visually-hidden" for="cta-email">Correo electrÃ³nico</label>
+            <label class="visually-hidden" for="cta-email">Correo electrónico</label>
             <input id="cta-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
-            <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">â†’</span></button>
+            <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">→</span></button>
           </form>
-          <p class="cta-meta">âŠ˜ sin spam Â· âŠ• baja inmediata Â· âŠ— sin tracking de terceros Â· MIT License</p>
+          <p class="cta-meta">⊘ sin spam · ⊕ baja inmediata · ⊗ sin tracking de terceros · MIT License</p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
   <footer class="footer" role="contentinfo">
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#hero" class="brand footer-brand-link" aria-label="Zyntra">
-          <span class="brand-mark" aria-hidden="true">â—‰</span>
+          <span class="brand-mark" aria-hidden="true">◉</span>
           <span class="brand-name">Zyntra</span>
         </a>
-        <p>Monitor de infraestructura Linux en tiempo real. Corre en tu propio hardware, sin agentes, sin la nube. Hecho por gente de operaciones que usa Linux todos los dÃ­as.</p>
-        <span class="footer-meta">v2.4 Â· build 2026.05 Â· MIT License</span>
+        <p>Monitor de infraestructura Linux en tiempo real. Corre en tu propio hardware, sin agentes, sin la nube. Hecho por gente de operaciones que usa Linux todos los días.</p>
+        <span class="footer-meta">v2.4 · build 2026.05 · MIT License</span>
       </div>
       <nav aria-label="Producto">
         <h5 class="footer-col-head">Producto</h5>
@@ -744,11 +744,11 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
           <li><a href="#cta">Solicitar demo</a></li>
         </ul>
       </nav>
-      <nav aria-label="DocumentaciÃ³n">
-        <h5 class="footer-col-head">DocumentaciÃ³n</h5>
+      <nav aria-label="Documentación">
+        <h5 class="footer-col-head">Documentación</h5>
         <ul>
-          <li><a href="#">GuÃ­a de despliegue</a></li>
-          <li><a href="#">ConfiguraciÃ³n SSH</a></li>
+          <li><a href="#">Guía de despliegue</a></li>
+          <li><a href="#">Configuración SSH</a></li>
           <li><a href="#">Referencia de API</a></li>
           <li><a href="#">Plantillas de alertas</a></li>
           <li><a href="#">Registro de cambios</a></li>
@@ -758,23 +758,23 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
         <h5 class="footer-col-head">Legal</h5>
         <ul>
           <li><a href="#">Licencia MIT</a></li>
-          <li><a href="#">PolÃ­tica de privacidad</a></li>
-          <li><a href="#">TÃ©rminos de uso</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
           <li><a href="#">Aviso de seguridad</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-bar">
       <div class="container footer-bar-inner">
-        <span>Â© 2026 Zyntra Â· open source Â· red interna Â· Linux-native</span>
+        <span>© 2026 Zyntra · open source · red interna · Linux-native</span>
         <span>operations.team [at] zyntra.dev</span>
       </div>
     </div>
   </footer>
 
-  <!-- â”€â”€ TOAST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+  <!-- ── TOAST ───────────────────────────────────────────────── -->
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
-    <span class="toast-icon" aria-hidden="true">â—‰</span>
+    <span class="toast-icon" aria-hidden="true">◉</span>
     <span class="toast-msg" id="toast-msg">Acceso solicitado.</span>
   </div>
 
@@ -785,4 +785,3 @@ acciÃ³n       â”ƒ journalctl --vacuum-size=500M
 
 </body>
 </html>
-
