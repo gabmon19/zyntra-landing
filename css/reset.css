@@ -3,9 +3,9 @@
   /* Paleta */
   --bg:           #e8ecf0;
   --bg-2:         #dde4e9;
-  --surface:      rgba(224, 230, 236, 0.82);
-  --surface-2:    rgba(215, 224, 231, 0.94);
-  --surface-3:    rgba(205, 216, 225, 0.90);
+  --surface:      rgba(240, 244, 248, 0.55);
+  --surface-2:    rgba(235, 240, 245, 0.75);
+  --surface-3:    rgba(228, 235, 242, 0.68);
 
   --fg:           #0a0e16;
   --fg-dim:       #4a5868;
