@@ -1,0 +1,168 @@
+/* ─── Design tokens · Niebla & medianoche ─────────────────────── */
+:root {
+  /* Paleta */
+  --bg:           #e8ecf0;
+  --bg-2:         #dde4e9;
+  --surface:      rgba(224, 230, 236, 0.82);
+  --surface-2:    rgba(215, 224, 231, 0.94);
+  --surface-3:    rgba(205, 216, 225, 0.90);
+
+  --fg:           #0a0e16;
+  --fg-dim:       #4a5868;
+  --fg-faint:     #8a96a6;
+
+  /* Acento: cobalto oscuro */
+  --green:        #1e3a5f;
+  --green-2:      #2a4f7a;
+  --green-deep:   #112234;
+  --green-soft:   rgba(30, 58, 95, 0.08);
+  --green-line:   rgba(30, 58, 95, 0.20);
+  --green-line-2: rgba(30, 58, 95, 0.38);
+  --green-glow:   rgba(30, 58, 95, 0.22);
+
+  /* Alerta */
+  --red:          #b03a48;
+  --red-soft:     rgba(176, 58, 72, 0.10);
+  --yellow:       #9a6b00;
+
+  /* Bordes */
+  --border:       rgba(30, 58, 95, 0.16);
+  --border-soft:  rgba(30, 58, 95, 0.09);
+
+  /* Texto sobre acento oscuro (botones, etc.) */
+  --on-accent:    #f0f5ff;
+
+  /* Tipografía */
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-sans:    -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  /* Espaciado */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 72px;
+  --sp-9: 112px;
+
+  /* Radios */
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 8px;
+
+  /* Sombras */
+  --shadow-card:  0 1px 0 rgba(30,58,95,0.06) inset, 0 18px 40px -22px rgba(0,0,0,0.18);
+  --shadow-hover: 0 1px 0 rgba(30,58,95,0.10) inset, 0 24px 60px -22px rgba(30,58,95,0.20);
+  --shadow-glow:  0 0 30px -8px rgba(30,58,95,0.25);
+
+  /* Transición */
+  --ease: cubic-bezier(0.2, 0.9, 0.3, 1);
+
+  /* Layout */
+  --container: 1240px;
+  --nav-h: 64px;
+}
+
+/* ─── Reset ────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, svg, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button { cursor: pointer; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol { list-style: none; }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--fg);
+}
+
+h1 { text-wrap: balance; }
+h2 { text-wrap: balance; }
+p  { text-wrap: pretty; }
+
+em {
+  font-style: normal;
+  color: var(--green-2);
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  color: var(--green);
+  background: var(--green-soft);
+  padding: 2px 6px;
+  border-radius: var(--r-1);
+}
+
+pre { font-family: var(--font-mono); }
+
+::selection {
+  background: var(--green);
+  color: var(--on-accent);
+}
+
+/* ─── Accesibilidad ────────────────────────────────────────────── */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+  border-radius: var(--r-1);
+}

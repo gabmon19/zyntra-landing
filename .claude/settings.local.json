@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse \"C:\\\\Users\\\\gabriel.monsalve\\\\Proyectos Claude\\\\Zyntra\")",
+      "Bash(Select-Object FullName, Length)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(python --version 2>&1; \\(Get-Command python\\).Source)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
