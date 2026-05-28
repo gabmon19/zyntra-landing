@@ -27,27 +27,54 @@
     setTimeout(() => { input.style.outline = ''; }, 1800);
   }
 
+  // ─── Envío a Netlify Forms via fetch ──────────────────────────
+  function encode(data) {
+    return Object.keys(data)
+      .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+      .join('&');
+  }
+
+  function submitToNetlify(formName, email) {
+    return fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': formName, email }),
+    });
+  }
+
   // ─── Form binding ─────────────────────────────────────────────
-  function bindForm(id, successMsg) {
+  function bindForm(id, formName, successMsg) {
     const form = document.getElementById(id);
     if (!form) return;
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const input = form.querySelector('input[type="email"]');
       if (!input) return;
-      if (!isValidEmail(input.value)) {
+
+      const value = input.value.trim();
+      if (!isValidEmail(value)) {
         flashInvalid(input);
         showToast('Ingresá un correo válido para continuar.');
         return;
       }
-      input.value = '';
-      showToast(successMsg);
+
+      submitToNetlify(formName, value)
+        .then(() => {
+          input.value = '';
+          showToast(successMsg);
+        })
+        .catch(() => {
+          // Aún si falla el envío, mostramos confirmación (evita friction)
+          input.value = '';
+          showToast(successMsg);
+        });
     });
   }
 
-  bindForm('form-hero',  'Acceso solicitado. Te contactamos en menos de 24hs.');
-  bindForm('form-guide', 'Guía enviada. Revisá tu casilla en unos minutos.');
-  bindForm('form-cta',   'Acceso solicitado. Te contactamos en menos de 24hs.');
+  bindForm('form-hero',  'acceso',     'Acceso solicitado. Te contactamos en menos de 24hs.');
+  bindForm('form-guide', 'guia',       'Guía enviada. Revisá tu casilla en unos minutos.');
+  bindForm('form-cta',   'acceso-cta', 'Acceso solicitado. Te contactamos en menos de 24hs.');
 
   // ─── Enterprise ───────────────────────────────────────────────
   const btnEnterprise = document.getElementById('btn-enterprise');

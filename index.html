@@ -65,7 +65,9 @@
           Sin instalar un solo agente en los nodos monitoreados.
         </p>
 
-        <form class="inline-form reveal" id="form-hero" novalidate aria-label="Solicitar acceso anticipado">
+        <form class="inline-form reveal" id="form-hero" name="acceso" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Solicitar acceso anticipado">
+          <input type="hidden" name="form-name" value="acceso">
+          <input type="hidden" name="bot-field" style="display:none">
           <label class="visually-hidden" for="hero-email">Correo electrónico</label>
           <input id="hero-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
           <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">→</span></button>
@@ -375,7 +377,9 @@ $ <em>rm -rf /var/log/nginx</em>
               <li><span aria-hidden="true">⊕</span> Plantillas de alertas para Slack y Teams.</li>
               <li><span aria-hidden="true">⊕</span> Script de backup automático de la BD SQLite.</li>
             </ul>
-            <form class="inline-form" id="form-guide" novalidate aria-label="Descargar guía gratuita">
+            <form class="inline-form" id="form-guide" name="guia" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Descargar guía gratuita">
+              <input type="hidden" name="form-name" value="guia">
+              <input type="hidden" name="bot-field" style="display:none">
               <label class="visually-hidden" for="lm-email">Correo electrónico</label>
               <input id="lm-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
               <button type="submit" class="btn btn-primary">Descargar PDF <span aria-hidden="true">↓</span></button>
@@ -705,7 +709,9 @@ acción       ┃ journalctl --vacuum-size=500M
             Desde instalación limpia a dashboard operacional en menos de 15 minutos.
             Sin cuentas cloud, sin costos recurrentes, sin datos que salgan de tu red.
           </p>
-          <form class="inline-form inline-form-lg" id="form-cta" novalidate aria-label="Solicitar acceso">
+          <form class="inline-form inline-form-lg" id="form-cta" name="acceso-cta" netlify data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Solicitar acceso">
+            <input type="hidden" name="form-name" value="acceso-cta">
+            <input type="hidden" name="bot-field" style="display:none">
             <label class="visually-hidden" for="cta-email">Correo electrónico</label>
             <input id="cta-email" type="email" name="email" placeholder="tu@empresa.com" autocomplete="email" required>
             <button type="submit" class="btn btn-primary">Solicitar acceso <span aria-hidden="true">→</span></button>
